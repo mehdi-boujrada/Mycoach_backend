@@ -22,10 +22,6 @@ public class Users extends BaseEntity{
 
     @NotNull
     protected String emailAddress;
-
-
-    public Users() {
-    }
     
 
     public Users(String username, String password, String Name, String description, String emailAddress) {
