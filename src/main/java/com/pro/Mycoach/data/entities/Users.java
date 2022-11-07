@@ -26,12 +26,9 @@ public class Users extends BaseEntity{
 
     public Users() {
     }
+    
 
-    public Users(String username, String password, String name, String description, String emailAddress) {
-    }
-
-    public Users(String username, String password, String Name, String description, String emailAddress,
-                String address) {
+    public Users(String username, String password, String Name, String description, String emailAddress) {
         this.username = username;
         this.password = new BCryptPasswordEncoder().encode(password);
         this.Name = Name;
